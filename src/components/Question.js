@@ -8,7 +8,6 @@ function Question({ question, onAnswered }) {
         if (timeRemaining === 0) {
             setTimeRemaining(10);
             onAnswered(false);
-            return;
         }
         const timer = setTimeout(setTimeRemaining(timeRemaining - 1), 1000);
 
